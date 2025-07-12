@@ -1,0 +1,10 @@
+@keyframes navbar-anchor {
+    from
+    {
+        border: 2px solid transparent;
+    }
+    to
+    {
+        border: 2px solid rgb(233, 98, 49);
+    }
+}

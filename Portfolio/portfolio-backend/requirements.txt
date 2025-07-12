@@ -1,0 +1,5 @@
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+gunicorn      # <— Render will use this
+python-dotenv # (if you load .env locally)

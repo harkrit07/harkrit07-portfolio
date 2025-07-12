@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harkrit Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="name">Harkrit</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="navbar-head" id="navbarHead">
+        <!-- Home icon -->
+        <a href="#Home" aria-label="Home">
+          <i class="fa-solid fa-house" style="padding: 4px;"></i>Home
+        </a>
+        <a href="#About">
+          <i class="fa-solid fa-user"></i> About
+        </a>
+        <a href="#Skills">
+          <i class="fa-solid fa-code"></i> Skills
+        </a>
+        <a href="#Projects">
+          <i class="fa-solid fa-diagram-project"></i> Projects
+        </a>
+        <a href="#Experience">
+          <i class="fa-solid fa-briefcase"></i> Experience
+        </a>
+        <a href="#Contact">
+          <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="Home">
+      <div class="hero-image">
+        <!-- <img src="./images/13.jpg" alt="Harkrit Profile" class="profile-image"> -->
+        <div class="flip-card profile-image">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-face flip-front ">
+              <img src="./images/14.jpg" alt="Project screen" class="profile-image">
+            </div>
+
+            <!-- Back (Ghibli) -->
+            <div class="flip-face flip-back">
+              <img src="./images/anime.jpg" alt="Studio‑Ghibli style" class="profile-image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>
+          Hi, I'm
+          <span class="hero-text">Harkrit</span>
+        </h1>
+        <p>
+          Python Developer | AI Developer
+        </p>
+        <button class="btn">
+          <a href="#Projects">Explore my Work</a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section-->
+  <div class="body-section" id="About">
+    <p class="me">About Me</p>
+    <div class="about-paragraph">
+      Hi! I'm <span class="highlight">Harkrit</span>, an <span class="highlight">AI Developer</span> and
+      <span class="highlight">Python Developer</span> with a deep interest in building intelligent systems and
+      automating real-world solutions through code. I specialize in designing, developing, and deploying applications
+      that leverage <span class="highlight">artificial intelligence</span> and <span class="highlight">machine
+        learning</span> to
+      solve complex problems. With a strong foundation in <span class="highlight">Python</span>, I work across various
+      domains — from backend development to AI model integration. My passion lies in building smart, scalable, and
+      efficient software that makes a difference.
+    </div>
+    <div style="margin-top: 20px; font-size: 1.5rem;">
+      <strong>Download Resume:</strong>
+      <span class="aboutmetdtwo">
+        <button class="download-btn" onclick="downloadResume()">
+          <svg class="download-icon" viewBox="0 0 24 24">
+            <path d="M12 15.577l-3.538-3.539-1.415 1.414L12 18.405l4.953-4.953-1.414-1.414L12 15.577z" />
+            <path d="M11 3h2v9h-2V3z" />
+            <path d="M4 19h16v2H4v-2z" />
+          </svg>
+        </button>
+      </span>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="body-section" id="Skills">
+    <p class="me">Skills</p>
+
+    <div class="skills-grid">
+      <!-- Python -->
+      <div class="skill-card">
+        <img src="./images/skills/python.jpeg" alt="Python logo" class="skill-logo" />
+        <h3>Python</h3>
+      </div>
+
+      <!-- Flask -->
+      <div class="skill-card">
+        <img src="./images/skills/flask.png" alt="Flask logo" class="skill-logo" />
+        <h3>Flask</h3>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="skill-card">
+        <img src="./images/skills/machinelearning.jpeg" alt="Machine Learning logo" class="skill-logo" />
+        <h3>Machine&nbsp;Learning</h3>
+      </div>
+
+      <!-- Streamlit-->
+      <div class="skill-card">
+        <img src="./images/skills/streamlit.png" alt="Machine Learning logo" class="skill-logo" />
+        <h3>Streamlit</h3>
+      </div>
+
+      <!-- Tensorflow -->
+      <div class="skill-card">
+        <img src="./images/skills/tensorflow.png" alt="Deep Learning logo" class="skill-logo" />
+        <h3>Tensorflow</h3>
+      </div>
+
+      <!-- pandas -->
+      <div class="skill-card">
+        <img src="./images/skills/pandas.png" alt="Deep Learning logo" class="skill-logo" />
+        <h3>Pandas</h3>
+      </div>
+
+      <!-- numpy -->
+      <div class="skill-card">
+        <img src="./images/skills/numpy.png" alt="Deep Learning logo" class="skill-logo" />
+        <h3>Numpy</h3>
+      </div>
+
+      <!-- seaborn -->
+      <div class="skill-card">
+        <img src="./images/skills/seaborn.png" alt="Deep Learning logo" class="skill-logo" />
+        <h3>Seaborn</h3>
+      </div>
+
+      <!-- matplotlib -->
+      <div class="skill-card">
+        <img src="./images/skills/matplotlib.png" alt="Deep Learning logo" class="skill-logo" />
+        <h3>Matplotlib</h3>
+      </div>
+
+      <!-- MySQL -->
+      <div class="skill-card">
+        <img src="./images/skills/mysql.png" alt="MySQL logo" class="skill-logo" />
+        <h3>MySQL</h3>
+      </div>
+
+      <!-- HTML5 -->
+      <div class="skill-card">
+        <img src="./images/skills/html.png" alt="HTML5 logo" class="skill-logo" />
+        <h3>HTML&nbsp;5</h3>
+      </div>
+
+      <!-- CSS3 -->
+      <div class="skill-card">
+        <img src="./images/skills/css.png" alt="CSS3 logo" class="skill-logo" />
+        <h3>CSS&nbsp;3</h3>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card">
+        <img src="./images/skills/javascript.png" alt="JavaScript logo" class="skill-logo" />
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section (if you want to add GitHub projects) -->
+  <!-- Projects Section -->
+  <section class="body-section" id="Projects">
+    <p class="me">Projects</p>
+    <div class="projects-grid">
+
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <img src="./images/projects/1.jpeg" alt="Resume analysis image" class="project-thumb">
+        <header>
+          <h3>AI Powered Resume Screening and Ranking System</h3>
+        </header>
+        <p class="project-desc">
+          - Built a Streamlit dashboard for HR to visualize rankings and candidate-job fit, reducing manual screening
+          time by 40%. <br>
+          - Executed TF IDF and Cosine Similarity to match resumes against job descriptions, achieving 75% Matching
+          precision.</p>
+        <a href="https://github.com/harkrit07/AI-Powered-Resume-Screening-and-Ranking-System" target="_blank"
+          class="project-link">
+          <i class="fa-brands fa-github"></i> View Code
+        </a>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="project-card">
+        <img src="./images/projects/4.jpeg" alt="PlantBox Screenshot" class="project-thumb">
+        <header>
+          <h3>Real Time Emotion Detection</h3>
+        </header>
+        <p class="project-desc">
+          - Built a real-time emotion recognition system using OpenCV<br>
+          - Trained a Convolutional Neural Network CNN on 10,000 labelled facial images to classify six core emotions,
+          attaining 95% classification precision.</p>
+        <a href="https://github.com/harkrit07/Real-Time-Emotion-Detection" target="_blank" class="project-link">
+          <i class="fa-brands fa-github"></i> View Code
+        </a>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="body-section" id="Experience">
+    <p class="me">Experience</p>
+    <div class="timeline-experience">
+
+      <!-- Experience Card 1 -->
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>Data Science Internship Trainee</h3>
+          <h4>Mindcode Lab Pvt. Ltd.<span class="location">| Mohali, India</span></h4>
+          <ul>
+            <li>Developed hands-on expertise in Python, utilizing Pandas and NumPy to manipulate and analyze over 10,000
+              rows of structured
+              data across multiple projects.</li>
+            <li>Applied data science techniques such as cleaning, EDA, statistical evaluation, and ML algorithms to
+              extract insights from datasets exceeding 5000 records, improving model performance by 15%.</li>
+          </ul>
+          <p class="duration">July 2024 – August 2024</p>
+        </div>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>AICTE Internship in Artificial Intelligence</h3>
+          <h4>Techsaksham Edunet Foundation <span class="location">| AICTE • Microsoft • SAP</span></h4>
+          <ul>
+            <li>Applied NLP techniques using NLTK, Scikit-learn, and PyPDF2 to extract and analyze text from more than
+              20 resumes, enhancing prediction performance by 20%.</li>
+            <li>Implemented ML models using TF IDF and Cosine Similarity to semantically match candidates with job
+              descriptions, achieving over 75% match precision across test cases.</li>
+          </ul>
+          <p class="duration">March 2025 – April 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <p class="me">Contact</p>
+  <section class="contact-section" id="Contact">
+    <div class="contact-wrapper">
+      <div class="contact-illustration">
+        <img src="./images/girl developer desk.png" alt="Developer at desk">
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-wrapper">
+        <h2>
+          <i class="fa-solid fa-headset"></i>
+          Get In <span>Touch</span>
+        </h2>
+
+        <form class="contact-form" action="#" method="POST">
+          <!-- Name -->
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="name" placeholder="Name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <!-- Phone -->
+          <div class="input-group">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" name="phone" placeholder="Phone">
+          </div>
+
+          <!-- Message -->
+          <div class="input-group">
+            <i class="fa-solid fa-message"></i>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="submit-btn">
+            Submit&nbsp;<i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Simple Footer ===== -->
+  <footer class="simple-footer">
+    <!-- Social icons -->
+    <div class="footer-col contact-info">
+      <h3>Contact Info</h3>
+      <div class="contact-row">
+        <div><i class="fa-solid fa-phone"></i> +91 9812983322</div>
+        <div><i class="fa-solid fa-envelope"></i> harkritbangarh131@gmail.com</div>
+        <div><i class="fa-solid fa-location-dot"></i> Haryana, India</div>
+      </div>
+    </div>
+    <div class="footer-icons">
+      <a
+        href="https://www.linkedin.com/in/harkrit-kaur-0007j?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvStKZkYERLeAUm%2BjQOJjWQ%3D%3D"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/harkrit07"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="footer-menu">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Projects">Projects</Prog></a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="footer-copy footer-quote">
+      Less bugs, more mugs <i class="fa-solid fa-mug-hot"></i> Made with ❤️ by Harkrit
+    </p>
+  </footer>
+
+  <!--                                  Script                       -->
+  <script>
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const navbarHead = document.getElementById('navbarHead');
+      navbarHead.classList.toggle('active');
+    }
+
+    // Resume download
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'Harkrit Resume.pdf';
+      link.download = 'Harkrit Resume.pdf';
+      link.click();
+    }
+
+
+    // Typing effect
+    function typeWriter(element, text, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+    window.addEventListener('load', () => {
+      const heroText = document.querySelector('.hero-content p');
+      if (heroText) {
+        const originalText = heroText.textContent;
+        typeWriter(heroText, originalText, 80);
+      }
+    });
+
+    const style = document.createElement('style');
+    style.textContent = `
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: rgb(233, 98, 49);
+}
+.language {
+  background: rgba(233, 98, 49,0.2);
+  color: rgb(233, 98, 49);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.updated {
+  font-style: italic;
+}
+`;
+    document.head.appendChild(style);
+
+    const API_BASE =
+      location.hostname === "127.0.0.1" || location.hostname === "localhost"
+        ? "http://127.0.0.1:5000"
+        : "https://harkrit-portfolio-backend.onrender.com"; // production
+
+      //  location.hostname === "https://harkrit-portfolio-backend.onrender.com";
+    document
+      .querySelector(".contact-form")
+      .addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // build one object with the values
+        const formData = {
+          name: e.target.name.value.trim(),
+          email: e.target.email.value.trim(),
+          phone: e.target.phone.value.trim(),
+          message: e.target.message.value.trim(),
+        };
+
+        try {
+          const res = await fetch(`${API_BASE}/api/contact`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          });
+
+          const json = await res.json();
+
+          if (res.ok) {
+            alert("Thanks! I’ll get back to you soon.");
+            e.target.reset();
+          } else {
+            alert(json.error || "Something went wrong.");
+          }
+        } catch (err) {
+          console.error(err);
+          alert("Server unreachable.");
+        }
+      });
+
+  </script>
+
+</body>
+
+</html>

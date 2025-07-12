@@ -788,3 +788,35 @@ body {
     margin: 0 auto;
   }
 }
+
+
+/* ─── Responsive fix for the Experience timeline ────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Move the vertical line from centre to the left edge */
+  .timeline-experience::after {
+    left: 20px;              /* matches icon offset */
+  }
+
+  /* Stack every timeline card full‑width */
+  .timeline-container,
+  .timeline-container.left,
+  .timeline-container.right {
+    width: 100%;
+    left: 0 !important;      /* override the 50% from desktop layout */
+    padding: 1.25rem 1rem 1.25rem 60px; /* room for the icon + spacing */
+    box-sizing: border-box;  /* keep padding from increasing width */
+  }
+
+  /* Re‑position the circular icon that sits in the line */
+  .timeline-container::after {
+    left: 12px !important;   /* centred on the 4 px line */
+    right: auto !important;  /* cancel the previous right alignment */
+    top: 24px;               /* keeps it near the card header */
+  }
+}
+
+/* Optional: give cards a bit more breathing room below large tablets */
+@media (max-width: 1024px) {
+  .timeline-container { margin-bottom: 2rem; }
+}
